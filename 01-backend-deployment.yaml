@@ -19,6 +19,15 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5001
+          env:
+            - name: MODEL_ID
+              value: "Qwen/Qwen2.5-0.5B-Instruct"
+            - name: TRANSFORMERS_OFFLINE
+              value: "1"
+            - name: HF_HOME
+              value: "/app/hf_cache"
+            - name: NUM_THREADS
+              value: "4"
           resources:
             requests:
               memory: "1.5Gi"
