@@ -1,0 +1,6 @@
+# torch installed separately in Dockerfile (CPU wheel):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+flask
+transformers
+accelerate
+gunicorn
